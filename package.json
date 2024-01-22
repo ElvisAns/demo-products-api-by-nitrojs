@@ -5,6 +5,7 @@
         "dev": "nitropack dev",
         "build": "nitropack build",
         "preview": "node .output/server/index.mjs",
+        "start": "node .output/server/index.mjs",
         "format": "npx prettier . --write",
         "migrate:dev": "npx prisma migrate dev",
         "migrate:prod": "npx prisma migrate deploy",
