@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs",
+    "format": "npx prettier . --write",
+    "migrate:dev": "npx prisma migrate dev",
+    "migrate:prod": "npx prisma migrate deploy"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.8.1",
+    "nitropack": "latest",
+    "prettier": "^3.2.4",
+    "prisma": "^5.8.1",
+    "sqlite3": "^5.1.7"
+  }
+}
